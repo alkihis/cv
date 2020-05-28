@@ -1,6 +1,6 @@
 <template>
   <main>
-    Hello
+    School
   </main>
 </template>
 

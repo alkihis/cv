@@ -19,8 +19,11 @@ body {
 }
 
 main.default-root {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     margin-left: 20rem;
+  }
+  @media screen and (max-width: 1023px) {
+    padding-top: 77px;
   }
 }
 

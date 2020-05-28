@@ -1,6 +1,6 @@
 <template>
   <main>
-    Hello
+    Contact
   </main>
 </template>
 

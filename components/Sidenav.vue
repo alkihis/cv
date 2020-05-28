@@ -10,8 +10,10 @@
       </div>
     </div>
     <div :class="{ 'mobile-header': true, 'open': open }">
-      <span class="first-name">Louis</span>
-      <span class="last-name">Béranger</span>
+      <span class="names text">
+        <span class="first-name">Louis</span>
+        <span class="last-name">Béranger</span>
+      </span>
 
       <!-- Mobile toggle button -->
       <span class="open-button" @click="toggle" data-toggle-stopper>
@@ -20,7 +22,7 @@
     </div>
 
     <!-- Liens -->
-    <div class="links" :data-mobile-open="open">
+    <div :class="{ 'links': true, 'open': open }">
       <sidenav-link to="about">
         À Propos
       </sidenav-link>
@@ -52,8 +54,8 @@
     align-items: center;
 
     .names {
-      margin-top: .5rem;
-      font-size: 1.5rem;
+      margin-top: .8rem;
+      font-size: 2rem;
     }
 
     .profile-picture {
@@ -68,6 +70,18 @@
     }
   }
 
+  .mobile-header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+
+    .names {
+      font-size: 1.2rem;
+    }
+  }
+
   .links {
     display: flex;
     flex-direction: column;
@@ -76,7 +90,7 @@
     margin-top: 5vh;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .mobile-header {
       display: none;
     }
@@ -85,14 +99,32 @@
       position: fixed;
       width: 20rem;
       height: 100vh;
-      background-color: #398ee6;
+      background-color: #001e3d;
       color: white;
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     .header {
       display: none;
+    }
+
+    aside {
+      position: fixed;
+      background-color: #001e3d;
+      color: white;
+      width: 100%;
+    }
+
+    .mobile-header {
+      height: 77px;
+    }
+
+    .links {
+      &:not(.open) {
+        display: none;
+      } 
+      margin-top: 0;
     }
   }
 </style>
