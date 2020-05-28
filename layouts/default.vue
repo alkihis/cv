@@ -1,0 +1,40 @@
+<template>
+  <div>
+    <Sidenav />
+    <main class="default-root">
+      <nuxt />
+    </main>
+  </div>
+</template>
+
+<style lang="scss">
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main.default-root {
+  @media screen and (min-width: 768px) {
+    margin-left: 20rem;
+  }
+}
+
+.text {
+  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+</style>
+
+<script lang="ts">
+import { Vue, Component } from 'nuxt-property-decorator';
+import Sidenav from '../components/Sidenav.vue';
+
+@Component({
+  components: { Sidenav: Sidenav }
+})
+export default class extends Vue {}
+</script>
