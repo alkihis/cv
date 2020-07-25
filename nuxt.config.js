@@ -28,14 +28,12 @@ export default {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     // https://element.eleme.io/#/fr-FR/component/color
-    '@/plugins/element-ui',
     '@/plugins/components',
   ],
   /*

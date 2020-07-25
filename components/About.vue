@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="pad-main">
     <div class="names text">
       <p>
         Je suis 
@@ -17,7 +17,7 @@
       <span class="separator">•</span>
       <a class="tel" href="tel:+33669913079">+33 6 69 91 30 79</a>
       <span class="separator">•</span>
-      <a class="email" href="mailto:louis.beranger@etu.univ-lyon1.fr">louis.beranger@etu.univ-lyon1.fr</a>
+      <a class="email" href="mailto:beranger.louis.bio@gmail.com">beranger.louis.bio@gmail.com</a>
     </p>
 
     <p class="hobby">
@@ -31,14 +31,6 @@
 </template>
 
 <style lang="scss" scoped>
-  main {
-    margin: 0 3rem;
-
-    @media screen and (max-width: 994px) {
-      margin: 0 1rem;
-    }
-  }
-
   .names {
     p:first-child {
       font-size: 2.7rem;

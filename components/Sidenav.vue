@@ -134,6 +134,7 @@ export default class extends Vue {
   available = {
     'about': 'À propos',
     'school': 'Parcours',
+    'realisations': 'Réalisations',
     'skills': 'Compétences',
     'center-of-interests': 'Centres d\'intérêt',
     'contact': 'Contact',

@@ -8,6 +8,10 @@
       <School />
     </page-holder>
 
+    <page-holder id="realisations">
+      <Realisations />
+    </page-holder>
+
     <page-holder id="skills">
       <Skills />
     </page-holder>
@@ -29,14 +33,16 @@ import School from '../components/School.vue';
 import Skills from '../components/Skills.vue';
 import Interests from '../components/Interests.vue';
 import Contact from '../components/Contact.vue';
+import Realisations from '../components/Realisations.vue';
 
 @Component({
   components: {
     About,
-    School: School,
-    Skills: Skills,
-    Interests: Interests,
-    Contact: Contact,
+    School,
+    Skills,
+    Interests,
+    Contact,
+    Realisations,
   }
 })
 export default class extends Vue {
