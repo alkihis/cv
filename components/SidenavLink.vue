@@ -1,5 +1,5 @@
 <template>
-  <a :href="'#' + to" @click.prevent="scroll" class="nav-link text">
+  <a :href="'#' + to" @click.prevent="scroll" :class="{ 'nav-link': true, 'text': true, 'highlighted': highlighted }">
     <slot />
   </a>
 </template>
@@ -13,8 +13,14 @@
     margin: .5rem 0;
     font-weight: 300;
 
-    &:hover {
+    &:hover, &.highlighted:hover {
       color: rgb(187, 183, 226);
+    }
+
+    @media screen and (min-width: 1024px) {  
+      &.highlighted {
+        color: rgb(183, 175, 255);
+      }
     }
   }
 </style>
@@ -29,6 +35,9 @@ import { scrollIt } from '../helpers';
 export default class extends Vue {
   @Prop({ required: true, type: String })
   to!: string;
+
+  @Prop({ default: false, type: Boolean })
+  highlighted!: boolean;
 
   scroll() {
     const target = document.getElementById(this.to);

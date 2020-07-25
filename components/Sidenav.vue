@@ -23,24 +23,13 @@
 
     <!-- Liens -->
     <div :class="{ 'links': true, 'open': open }">
-      <sidenav-link to="about">
-        À Propos
-      </sidenav-link>
-
-      <sidenav-link to="school">
-        Parcours
-      </sidenav-link>
-
-      <sidenav-link to="skills">
-        Compétences
-      </sidenav-link>
-
-      <sidenav-link to="center-of-interests">
-        Centres d'intérêt
-      </sidenav-link>
-
-      <sidenav-link to="contact">
-        Contact
+      <sidenav-link 
+        v-for="element in el_iterator" 
+        :key="element" 
+        :to="element" 
+        :highlighted="selected_element === element"
+      >
+        {{ available[element] }}
       </sidenav-link>
     </div>
   </aside>
@@ -139,6 +128,25 @@ import SidenavLink from './SidenavLink.vue';
 export default class extends Vue {
   open = false;
 
+  /* Available and selected element in menu */
+  elements?: HTMLElement[];
+  selected_element = '';
+  available = {
+    'about': 'À propos',
+    'school': 'Parcours',
+    'skills': 'Compétences',
+    'center-of-interests': 'Centres d\'intérêt',
+    'contact': 'Contact',
+  };
+
+  /* To memoize element positions */
+  saved_window_size: [number, number] = [0, 0];
+  saved_el_pos: number[] = [];
+
+  get el_iterator() {
+    return Object.keys(this.available);
+  }
+
   toggle() {
     this.open = !this.open;
   }
@@ -162,13 +170,70 @@ export default class extends Vue {
     this.open = false;
   }
 
+  /**
+   * Check which menu element should be highlighted in sidenav, and change it if any.
+   */
+  handleScroll() {
+    const current = window.scrollY;
+
+    const positions = this.getCurrentElementPositions();
+    if (positions.length === 0) {
+      return;
+    }
+
+    let current_element = 0;
+
+    for (let i = 1; i <= positions.length; i++) {
+      if (i === positions.length) {
+        current_element = positions.length - 1;
+      }
+      if (current < positions[i]) {
+        current_element = i - 1;
+        break;
+      }
+    }
+
+    const name = this.el_iterator[current_element];
+
+    if (name !== this.selected_element) {
+      this.selected_element = name;
+    }
+  }
+
+  /**
+   * Return the current target element positions if window size changed,
+   * or saved element positions otherwise.
+   */
+  getCurrentElementPositions() {
+    if (!this.elements) {
+      return [];
+    }
+
+    const window_size: [number, number] = [window.innerWidth, window.innerHeight];
+    
+    if (window_size[0] === this.saved_window_size[0] && window_size[1] === this.saved_window_size[1]) {
+      return this.saved_el_pos;
+    }
+
+    this.saved_window_size = window_size;
+
+    return this.saved_el_pos = this.elements.map(e => e.getBoundingClientRect().y + window.scrollY);
+  }
+
   mounted() {
+    this.elements = this.el_iterator.map(e => document.getElementById(e)!);
     this.handleDocumentClick = this.handleDocumentClick.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+    
     window.addEventListener('click', this.handleDocumentClick);
+    window.addEventListener('scroll', this.handleScroll);
+
+    this.handleScroll();
   }
 
   beforeDestroy() {
     window.removeEventListener('click', this.handleDocumentClick);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
