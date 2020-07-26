@@ -3,6 +3,9 @@
     <h1 class="text heading">
       Réalisations
     </h1>
+    <div class="text subheading">
+      Professionnelles et personnelles
+    </div>
 
     <h2 class="text heading">
       Professionnelles
@@ -53,10 +56,19 @@
         location="INSA-BF2I (UMR0203)"
         techs="PHP, MySQL, BLAST, jQuery"
       />
+
+      <realisation-card 
+        @click.native="onCardClick('hypergraph')" 
+        image="/img/hypergraph.png" 
+        title="Clôture d'hypergraphe"
+        details="Amélioration de la complexité d'une fonction réalisant la clôture d'un graphe représentant des réactions chimiques"
+        location="INRIA-LBBE"
+        techs="C++"
+      />
     </div>
 
     <h2 class="text heading">
-      Personelles
+      Personnelles
     </h2>
 
     <div class="card-holder">
@@ -93,6 +105,16 @@
       />
     </div>
 
+    <div class="text this-cv">
+      <p>
+        Ce CV est également un de mes projets personnels, dont vous pouvez
+        <a href="https://github.com/alkihis/cv" target="_blank" rel="noopener noreferrer">retrouver le code sur mon GitHub</a>.
+
+        <br />
+        Il a été réalisé à l'aide de <strong>Vue.js et Nuxt</strong>, et est hébergé sur une machine configurée par mes soins.
+      </p>
+    </div>
+
     <Modal v-if="modal" :open="true" @close="onModalClose">
       <div class="box">
         <div v-if="type === 'mad'">
@@ -109,6 +131,9 @@
         </div>
         <div v-else-if="type === '4in'">
           <four-in />
+        </div>
+        <div v-else-if="type === 'hypergraph'">
+          <hyper-graph />
         </div>
         <div v-else-if="type === 'questionit'">
           <question-it />
@@ -130,6 +155,13 @@
 <style lang="scss" scoped>
   main {
     width: 100%;
+  }
+
+  h1.heading + div.subheading {
+    color: rgb(7, 61, 161);
+    font-size: 1.3rem;
+    margin-top: -.5rem;
+    margin-bottom: 2rem;
   }
 
   h2 {
@@ -166,6 +198,12 @@
 
   h1.heading {
     margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .this-cv {
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
   }
 </style>
 
@@ -177,6 +215,7 @@ import OmegaTopology from './Realisations/OmegaTopology.vue';
 import PromoApp from './Realisations/PromoApp.vue';
 import BusyBird from './Realisations/BusyBird.vue';
 import FourIn from './Realisations/FourIn.vue';
+import HyperGraph from './Realisations/HyperGraph.vue';
 import QuestionIt from './Realisations/QuestionIt.vue';
 import ArchiveExplorer from './Realisations/ArchiveExplorer.vue';
 import PenguinCorp from './Realisations/PenguinCorp.vue';
@@ -192,6 +231,7 @@ import Modal from './Modal.vue';
     PromoApp,
     BusyBird,
     FourIn,
+    HyperGraph,
     QuestionIt,
     ArchiveExplorer,
     PenguinCorp,

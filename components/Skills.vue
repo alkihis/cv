@@ -44,7 +44,7 @@
       <skill-icon url="couchdb.svg" text="CouchDB" />
       <skill-icon url="mongo.png" text="MongoDB" />
       <skill-icon url="rdf.png" text="Graphes RDF" />
-      <skill-icon url="typeorm.webp" text="TypeORM" />
+      <skill-icon url="typeorm.png" text="TypeORM" />
     </div>
 
     <h2 class="text heading">
@@ -68,6 +68,15 @@
       <skill-icon url="osm.png" text="OpenStreetMap (+ Leaflet)" />
       <skill-icon url="scikit.png" text="Scikit-Learn" />
       <skill-icon url="gromacs.png" text="GROMACS" />
+    </div>
+
+    <h2 class="text heading">
+      Langues
+    </h2>
+
+    <div class="image-container">
+      <skill-icon url="english.png" text="Anglais (TOEIC 965 points)" />
+      <skill-icon url="francais.png" text="Français (natif)" />
     </div>
   </main>
 </template>

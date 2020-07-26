@@ -2,7 +2,7 @@
   <main class="pad-main">
     <div class="names text">
       <p>
-        Je suis 
+        <span class="iam">Je suis</span>
         <strong class="firstn">Louis</strong> 
         <strong class="lastn">Béranger</strong>
       </p>
@@ -40,9 +40,15 @@
 
 <style lang="scss" scoped>
   .names {
+    margin-top: 1rem;
+
     p:first-child {
       font-size: 2.7rem;
       margin: 0;
+
+      .iam {
+        font-size: 90%;
+      }
 
       strong {
         color: rgb(58, 127, 255);
