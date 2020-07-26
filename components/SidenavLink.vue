@@ -43,7 +43,7 @@ export default class extends Vue {
     const target = document.getElementById(this.to);
 
     if (target) {
-      const offset = target.offsetTop;
+      const offset = target.offsetTop + 1;
       const is_mobile = window.innerWidth < 1024;
 
       scrollIt(offset - (is_mobile ? 77 : 0), 500, 'easeInOutQuart');
