@@ -1,6 +1,6 @@
 # cv
 
-> Personnal CV
+> Personal CV
 
 ## Build Setup
 

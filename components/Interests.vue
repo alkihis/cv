@@ -1,6 +1,12 @@
 <template>
-  <main>
-    Interests
+  <main class="pad-main">
+    <h1 class="text heading">
+      Centres d'intérêt
+    </h1>
+
+    <p class="text">
+      Des trucs
+    </p>
   </main>
 </template>
 

@@ -19,10 +19,6 @@
     <page-holder id="center-of-interests">
       <Interests />
     </page-holder>
-
-    <page-holder id="contact">
-      <Contact />
-    </page-holder>
   </div>
 </template>
 
@@ -32,7 +28,6 @@ import About from '../components/About.vue';
 import School from '../components/School.vue';
 import Skills from '../components/Skills.vue';
 import Interests from '../components/Interests.vue';
-import Contact from '../components/Contact.vue';
 import Realisations from '../components/Realisations.vue';
 
 @Component({
@@ -41,7 +36,6 @@ import Realisations from '../components/Realisations.vue';
     School,
     Skills,
     Interests,
-    Contact,
     Realisations,
   }
 })

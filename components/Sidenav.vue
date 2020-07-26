@@ -103,6 +103,7 @@
       background-color: #001e3d;
       color: white;
       width: 100%;
+      z-index: 2;
     }
 
     .mobile-header {
@@ -137,12 +138,12 @@ export default class extends Vue {
     'realisations': 'Réalisations',
     'skills': 'Compétences',
     'center-of-interests': 'Centres d\'intérêt',
-    'contact': 'Contact',
   };
 
   /* To memoize element positions */
   saved_window_size: [number, number] = [0, 0];
   saved_el_pos: number[] = [];
+  last_saved: number = 0;
 
   get el_iterator() {
     return Object.keys(this.available);
@@ -211,12 +212,15 @@ export default class extends Vue {
     }
 
     const window_size: [number, number] = [window.innerWidth, window.innerHeight];
+    const threshold = Date.now();
     
     if (window_size[0] === this.saved_window_size[0] && window_size[1] === this.saved_window_size[1]) {
-      return this.saved_el_pos;
+      if (this.last_saved > threshold)
+        return this.saved_el_pos;
     }
 
     this.saved_window_size = window_size;
+    this.last_saved = threshold + (1000 * 5);
 
     return this.saved_el_pos = this.elements.map(e => e.getBoundingClientRect().y + window.scrollY);
   }

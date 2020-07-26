@@ -20,12 +20,20 @@
       <a class="email" href="mailto:beranger.louis.bio@gmail.com">beranger.louis.bio@gmail.com</a>
     </p>
 
-    <p class="hobby">
+    <p class="description text">
+      Intéressé par l'étude et la compréhension des phénomènes biologiques, mon parcours universitaire a débuté avec une formation en biologie
+      à l'Université de Lyon. Au cours de mes études, je me suis passionné pour la programmation et ait continué ma voie au sein du parcours
+      bio-informatique en licence, puis en master. 
 
+      <br /><br />
+      Si la formation était majoritairement axée autour de l'analyse de données génomiques, transcriptomiques et protéomiques, 
+      je me suis en parallèle formé aux technologies du web en autodidacte par de multiples projets personnels, 
+      et ait enrichi cette expérience au cours de différents stages et projets dans le cadre de ma formation.
     </p>
 
     <div class="social-links">
-
+      <about-tag link="https://www.linkedin.com/in/louis-b%C3%A9ranger-52815a178/" img="linkedin.png" text="LinkedIn" /> 
+      <about-tag link="https://github.com/alkihis" img="github.svg" text="GitHub" /> 
     </div>
   </main>
 </template>
@@ -72,13 +80,29 @@
       color: rgb(53, 53, 53);
     }
   }
+
+  .description {
+    margin-top: 2rem;
+  }
+
+  .social-links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    & > * {
+      margin-right: .7rem;
+    }
+  }
 </style>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
+import AboutTag from './AboutTag.vue';
 
 @Component({
-  components: {}
+  components: {
+    AboutTag,
+  }
 })
 export default class extends Vue {
 
