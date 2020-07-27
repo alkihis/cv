@@ -17,7 +17,7 @@
         Transports
       </h2>
       <p>
-        Transports collectifs ou individuels, modes doux, multi-modalité, et matériel roulant.
+        Infrastructures de transports collectifs ou individuels, modes doux, multi-modalité, et matériel roulant.
       </p>
 
       <h2>
