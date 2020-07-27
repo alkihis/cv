@@ -70,28 +70,28 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'icons/icon-512x512.png'
+        content: 'img/icons/icon-512x512.png'
       },
       {
         hid: 'twitter:image',
         property: 'twitter:image',
-        content: 'icons/icon-512x512.png'
+        content: 'img/icons/icon-512x512.png'
       },
       { name: 'theme-color', content: '#0c6ebb' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', sizes: '256x256', href: '/favicon.ico' },
-      { rel: 'image_src', href: '/icons/icon-512x512.png' },
-      { rel: 'apple-touch-icon', sizes: '72x72', href: '/icons/icon-72x72.png' },
-      { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/icons/icon-96x96.png' },
-      { rel: 'apple-touch-icon', sizes: '96x96', href: '/icons/icon-96x96.png' },
-      { rel: 'apple-touch-icon', sizes: '128x128', href: '/icons/icon-128x128.png' },
-      { rel: 'apple-touch-icon', sizes: '144x144', href: '/icons/icon-144x144.png' },
-      { rel: 'apple-touch-icon', sizes: '152x152', href: '/icons/icon-152x152.png' },
-      { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/icons/icon-192x192.png' },
-      { rel: 'apple-touch-icon', sizes: '192x192', href: '/icons/icon-192x192.png' },
-      { rel: 'apple-touch-icon', sizes: '384x384', href: '/icons/icon-384x384.png' },
-      { rel: 'apple-touch-icon', sizes: '512x512', href: '/icons/icon-512x512.png' },
+      { rel: 'image_src', href: 'img/icons/icon-512x512.png' },
+      { rel: 'apple-touch-icon', sizes: '72x72', href: 'img/icons/icon-72x72.png' },
+      { rel: 'icon', type: 'image/png', sizes: '96x96', href: 'img/icons/icon-96x96.png' },
+      { rel: 'apple-touch-icon', sizes: '96x96', href: 'img/icons/icon-96x96.png' },
+      { rel: 'apple-touch-icon', sizes: '128x128', href: 'img/icons/icon-128x128.png' },
+      { rel: 'apple-touch-icon', sizes: '144x144', href: 'img/icons/icon-144x144.png' },
+      { rel: 'apple-touch-icon', sizes: '152x152', href: 'img/icons/icon-152x152.png' },
+      { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'img/icons/icon-192x192.png' },
+      { rel: 'apple-touch-icon', sizes: '192x192', href: 'img/icons/icon-192x192.png' },
+      { rel: 'apple-touch-icon', sizes: '384x384', href: 'img/icons/icon-384x384.png' },
+      { rel: 'apple-touch-icon', sizes: '512x512', href: 'img/icons/icon-512x512.png' },
       { rel: 'manifest', href: '/manifest.json' },
       { rel: 'canonical', href: 'https://louisberanger.fr/' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
