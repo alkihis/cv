@@ -8,3 +8,4 @@ AddType image/x-icon .ico
 ExpiresByType image/ico "access plus 2592000 seconds"
 ExpiresByType image/icon "access plus 2592000 seconds"
 ExpiresByType image/x-icon "access plus 2592000 seconds"
+Header set Cache-Control "max-age=2592000, public"
