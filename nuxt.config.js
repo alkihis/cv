@@ -95,7 +95,6 @@ export default {
       { rel: 'manifest', href: '/manifest.json' },
       { rel: 'canonical', href: 'https://louisberanger.fr/' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '/css/all.min.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap' },
     ]
   },
