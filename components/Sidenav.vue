@@ -17,7 +17,7 @@
 
       <!-- Mobile toggle button -->
       <span class="open-button" @click="toggle" data-toggle-stopper>
-        <i class="fas fa-bars"></i>
+        <img src="/img/menu.png" alt="Ouvrir le menu" />
       </span>
     </div>
 
@@ -69,6 +69,15 @@
     .names {
       font-size: 1.2rem;
     }
+
+    .open-button {
+      display: inline-flex;
+      
+      img {
+        height: 32px;
+        width: 32px;
+      }
+    }
   }
 
   .links {
@@ -103,7 +112,7 @@
       background-color: #001e3d;
       color: white;
       width: 100%;
-      z-index: 2;
+      z-index: 100;
     }
 
     .mobile-header {

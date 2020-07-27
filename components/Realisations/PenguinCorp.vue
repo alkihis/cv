@@ -33,7 +33,7 @@
 
         <br />
         Il a consisté en ma première expérience avec ce langage fortement typé différent des langages du web.
-        Durant la GameJam, j'ai occupé le poste de développeur, et ait participé à la mise en place du menu ainsi que du système de dialogue au sein du jeu.
+        Durant la GameJam, j'ai occupé le poste de développeur, et ai participé à la mise en place du menu ainsi que du système de dialogue au sein du jeu.
       </span>
     </template>
   </realisation-modal>

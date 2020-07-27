@@ -22,13 +22,13 @@
 
     <p class="description text">
       Intéressé par l'étude et la compréhension des phénomènes biologiques, mon parcours universitaire a débuté avec une formation en biologie
-      à l'Université de Lyon. Au cours de mes études, je me suis passionné pour la programmation et ait continué ma voie au sein du parcours
+      à l'Université de Lyon. Au cours de mes études, je me suis passionné pour la programmation et ai continué ma voie au sein du parcours
       bio-informatique en licence, puis en master. 
 
       <br /><br />
       Si la formation était majoritairement axée autour de l'analyse de données génomiques, transcriptomiques et protéomiques, 
       je me suis en parallèle formé aux technologies du web en autodidacte par de multiples projets personnels, 
-      et ait enrichi cette expérience au cours de différents stages et projets dans le cadre de ma formation.
+      et ai enrichi cette expérience au cours de différents stages et projets dans le cadre de ma formation.
     </p>
 
     <div class="social-links">
