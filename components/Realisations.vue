@@ -34,7 +34,7 @@
         @click.native="onCardClick('promoapp')" 
         image="/img/promoapp.png" 
         title="Suivi des promotions bioinfo@lyon"
-        details="Interface web afin de récolter des informations sur les anciens étudiants du master bio-informatique de l'Université Claude Bernard Lyon 1"
+        details="Interface web pour récolter des informations sur les anciens étudiants du master bio-informatique de l'Université Claude Bernard Lyon 1"
         location="CNRS-LBBE (UMR5558)"
         techs="React, Python, Flask, SQLAlchemy"
       />
@@ -61,7 +61,7 @@
         @click.native="onCardClick('hypergraph')" 
         image="/img/hypergraph.png" 
         title="Clôture d'hypergraphe"
-        details="Amélioration de la complexité d'une fonction réalisant la clôture d'un graphe représentant des réactions chimiques"
+        details="Optimisation d'une fonction réalisant la clôture d'un graphe représentant des réactions chimiques"
         location="INRIA-LBBE"
         techs="C++"
       />
@@ -76,7 +76,7 @@
         @click.native="onCardClick('questionit')" 
         image="/img/questionit.png" 
         title="QuestionIt.space"
-        details="Site web de questions-réponses destiné aux utilisateurs de Twitter"
+        details="Site web de question-réponse destiné aux utilisateurs de Twitter"
         techs="Vue.js, Nuxt, Nest.js, TypeORM"
       />
 

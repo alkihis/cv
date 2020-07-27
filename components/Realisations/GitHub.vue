@@ -5,7 +5,7 @@
   >
     <template v-slot:details>
       <div>
-        Sur ce site sont présentées mes principaux projets, mais j'ai été impliqué dans d'autres développements au cours de mon parcours.
+        Sur ce site sont présentés mes principaux projets, mais j'ai été impliqué dans d'autres développements au cours de mon parcours.
       </div>
 
       <ul>

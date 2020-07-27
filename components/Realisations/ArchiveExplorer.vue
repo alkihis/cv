@@ -24,12 +24,12 @@
         capable, entièrement dans le navigateur, d'inspecter un fichier ZIP complexe et de présenter ses données de manière organisée.
 
         <br /><br />
-        Dans un premier temps, l'outil permet de consulter les données utilisateurs contenues dans l'archive, et d'accéder à ses tweets.
-        Les tweets sont organisés par année puis mois, autorisant le client à remontrer rapidement dans le temps. 
+        Dans un premier temps, l'outil permet de consulter les données utilisateur contenues dans l'archive, et d'accéder à ses tweets.
+        Les tweets sont organisés par année puis mois, autorisant le client à remonter rapidement dans le temps. 
 
         <br />
         Cette disposition est complétée par une recherche au sein de l'archive par expressions régulières et insensibilité à la casse, 
-        auquel s'ajoute des opérateurs de recherche (temporels ou numériques, comme le nombre de favoris).
+        à laquelle s'ajoute des opérateurs de recherche (temporels ou numériques, comme le nombre de favoris).
 
         <br />
         Depuis l'explorateur de tweets, l'usager peut supprimer des dizaines, centaines voir milliers de tweets dans un temps très court,
@@ -67,8 +67,8 @@
         <strong>Archive Explorer</strong> est conçu côté client avec <strong>React</strong> et le framework <strong>MaterialUI</strong>.
 
         <br />
-        Le serveur est codé avec <strong>Node.js</strong> et <strong>Express</strong>. Les utilisateurs et le cache de tweets est réalisée
-        avec une base de données NoSQL <strong>MongoDB</strong> (via l'ORM <strong>Mongoose</strong>).
+        Le serveur est codé avec <strong>Node.js</strong> et <strong>Express</strong>. Les utilisateurs et le cache de tweets sont stockés
+        dans une base de données NoSQL <strong>MongoDB</strong> (via l'ORM <strong>Mongoose</strong>).
 
         Ce projet a permis d'utiliser le système de multi-threading de Node.js, les <strong>worker threads</strong>.
 

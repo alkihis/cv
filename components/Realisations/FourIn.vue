@@ -21,9 +21,9 @@
       </h5>
 
       <span>
-        Le laboratoire BF2I a récolté au cours de l'année 2017 et 2018 des données génomiques issues du séquençage de plusieurs espèces, dont une en particulier
-        : le charençon du riz. Des analyses ont été réalisées afin de notamment extraires les données d'homologies entre les gènes d'autres insectes et ceux du
-        charençon. 
+        Le laboratoire BF2I a récolté au cours des années 2017 et 2018 des données génomiques issues du séquençage de plusieurs espèces, dont une en particulier
+        : le charançon du riz. Des analyses ont été réalisées afin de notamment extraire les données d'homologie entre les gènes d'autres insectes et ceux du
+        charançon. 
 
         <br /><br />
 

@@ -22,7 +22,7 @@
         À la suite de leur réussite au diplôme du Master Bio-informatique, il est intéressant pour l'équipe pédagogique de suivre les anciens étudiants. 
 
         <br />
-        Le premier but est statistique, le ministère de l'Ensignement Supérieur et de la Recherche demandant réguilièrement des informations sur l'avenir
+        Le premier but est statistique, le ministère de l'Ensignement Supérieur et de la Recherche demandant régulièrement des informations sur l'avenir
         des étudiants afin de juger l'efficacité de la formation.
         <br />
         Le second objectif est de constituer un "carnet d'adresses" aux étudiants actuellement en formation qui pourront contacter non seulement les précédents étudiants
@@ -37,7 +37,7 @@
         Technologies employées
       </h5>
       <span>
-        <strong>promos@bioinfo</strong> est développé avec <strong>React</strong> en <strong>TypeScript</strong> codé front-end, 
+        <strong>promos@bioinfo</strong> est développé avec <strong>React</strong> en <strong>TypeScript</strong> côté front-end, 
         afin de garantir le dynamisme et l'ergonomie de l'interface qui doit se
         vouloir au plus simple possible, pour ne pas décourager les anciens étudiants de saisir leurs informations.
 

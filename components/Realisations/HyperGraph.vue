@@ -15,13 +15,13 @@
       </h5>
 
       <span>
-        Un hypergraphe est un graphe (consitué d'arêtes et de noeuds) orienté avec chaque noeud pouvant avoir des connexions vers d'autres noeuds ainsi que vers
+        Un hypergraphe est un graphe (constitué d'arêtes et de noeuds) orienté avec chaque noeud pouvant avoir des connexions vers d'autres noeuds ainsi que vers
         lui-même, en appliquant des conditions sur chaque liaison. 
         Cette bibliothèque est conçue pour modéliser informatiquement des ensembles de réactions chimiques liées, comme on peut en voir en biologie notamment.
 
         <br />
         Au sein de cette librairie, il était possible de réaliser une clôture du graphe, c'est à dire définir quel ensemble de noeuds est accessible
-        depuis un noeud donnée.
+        depuis un noeud donné.
         La fonction initiale ayant une complexité quadratique, l'enjeu ici était de rendre la méthode plus performante, avec une complexité linéaire.
       </span>
 

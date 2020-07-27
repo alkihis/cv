@@ -9,7 +9,7 @@
   >
     <template v-slot:details>
       <span>
-        <strong>Busy Bird</strong> est une application mobile destinée aux téléphones <strong>Android</strong> de biologistes afin d'aider le suivi de 
+        <strong>Busy Bird</strong> est une application mobile destinée aux téléphones <strong>Android</strong> de biologistes afin d'assister le suivi de 
         populations d'oiseaux dans le parc naturel de la Chartreuse.
       </span>
 
@@ -18,16 +18,16 @@
       </h5>
 
       <span>
-        Une équipe du laboratoire LBBE (Lyon) étudie les populations de Cincle Plongeur au sein du Parc Naturel de la Chartreuse (au nord de Grenoble).
-        Cela consiste à relever sur des fiches papiers des informations anatomiques et physiologiques à propos d'oiseaux "pucées" à l'aide d'anneaux placées sur leurs pattes.
+        Une équipe du laboratoire LBBE (Lyon) étudie les populations de Cincle Plongeur au sein du Parc Naturel de la Chartreuse (nord de Grenoble).
+        Cela consiste à relever sur des fiches papier des informations anatomiques et physiologiques à propos d'oiseaux "pucés" à l'aide d'anneaux placés sur leurs pattes.
 
         <br />
 
         Cette prise de données régulière permet de suivre dans le temps l'évolution de la population au sein de plusieurs nichoirs, lieu de vie des oiseaux.
 
         <br />
-        Néanmoins, la prise d'information papier est parfois compliquée (manipulation de l'animal en simulatanée), nécessite tout de même un appareil pour enregistrer
-        des sons et des vidéos de l'animal, et devra être retranscrite sur ordinateur plus tard (via Excel) pour centraliser les données.
+        Néanmoins, la prise d'information papier est parfois compliquée (manipulation de l'animal en simulatané), nécessite tout de même un appareil pour enregistrer
+        des sons et vidéos de l'animal, et devra être retranscrite sur ordinateur plus tard (via Excel) pour centraliser les données.
         
         <br /><br />
         L'objectif de l'application est donc de proposer une manière de saisir, directement en numérique, les informations liées aux oiseaux. 

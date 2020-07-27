@@ -13,7 +13,7 @@
     -->
     <template v-slot:details>
       <span>
-        <strong>QuestionIt.space</strong> est un site web de questions/réponses destiné aux utilisateurs de Twitter, sur le modèle de 
+        <strong>QuestionIt.space</strong> est un site web de question/réponse destiné aux utilisateurs de Twitter, sur le modèle de 
         <a href="https://curiouscat.me" target="_blank" rel="noopener noreferrer">CuriousCat</a>.
       </span>
 
@@ -35,7 +35,7 @@
         Si cette réponse est elle-même une réponse à autre question, alors un <strong>thread</strong> (fil de discussion) sera créé automatiquement.
         
         <br />
-        Ce même utilisateur peut suivre d'autres personnes et consulter les réponses de ses abonnés dans une page dédiée.
+        Ce même utilisateur peut suivre d'autres personnes et consulter les réponses de ses abonnements dans une page dédiée.
       </span>
 
       <h5 class="modal-header">

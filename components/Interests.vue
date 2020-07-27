@@ -9,7 +9,7 @@
         Informatique
       </h2>
       <p>
-        Maintenance et administration de machines personnelles sous différents systèmes d'exploitations, 
+        Maintenance et administration de machines personnelles sous différents systèmes d'exploitation, 
         développement et participation dans la communauté JavaScript.
       </p>
 
