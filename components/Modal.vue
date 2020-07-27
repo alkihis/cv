@@ -63,7 +63,7 @@
     justify-content: center;
     overflow: hidden;
     position: fixed;
-    z-index: 40;
+    z-index: 999;
   }
 
   .is-large.delete, .is-large.modal-close {
