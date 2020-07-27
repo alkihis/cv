@@ -8,6 +8,9 @@ export default {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'fr',
+    },
     title: 'Louis Béranger - Développeur bio-informaticien',
     meta: [
       { charset: 'utf-8' },
