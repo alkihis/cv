@@ -26,7 +26,7 @@
         des étudiants afin de juger l'efficacité de la formation.
         <br />
         Le second objectif est de constituer un "carnet d'adresses" aux étudiants actuellement en formation qui pourront contacter non seulement les précédents étudiants
-        mais également leurs employeurs, si ils sont renseignés.
+        mais également leurs employeurs.
 
         <br /><br />
         Un site web très simple existait déjà dans ce but, mais il a été décidé d'étendre les possibilités de cet outil avec ce projet.

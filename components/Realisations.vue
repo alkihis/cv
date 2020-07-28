@@ -111,7 +111,7 @@
         <a href="https://github.com/alkihis/cv" target="_blank" rel="noopener noreferrer">retrouver le code sur mon GitHub</a>.
 
         <br />
-        Il a été réalisé à l'aide de <strong>Vue.js et Nuxt</strong>, et est hébergé sur une machine configurée par mes soins.
+        Il a été réalisé à l'aide de <strong>Vue.js et Nuxt</strong>, et est hébergé sur un serveur configuré par mes soins.
       </p>
     </div>
 
