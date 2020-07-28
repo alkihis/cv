@@ -21,21 +21,23 @@
       <span>
         En dynamique moléculaire, on cherche à prévoir ou expliquer des comportements observés expérimentalement
         au niveau moléculaire, comme une association protéine-ligand ou le déplacement de protéine au sein d'une membrane biologique.
-        Une technique développée au cours du siècle dernier est la simulation. Celle-ci se base sur des modèles de molécules,
-        originellement “non simplifiés”, appelés tout atome, tirés de fichiers
+        <br />
+        Pour cela, on peut utiliser une technique développée au cours du siècle dernier : la simulation. 
+        Celle-ci se base sur des modèles de molécules réalistes, représentant chaque atome et chaque liaison entre eux, appelés tout atome.
+        Ces modèles sont tirés de fichiers
         <a href="https://www.rcsb.org/" rel="noopener noreferrer" target="_blank">PDB</a>
         et obtenus depuis des données expérimentales, de RMN, cristallographie ou Cryo-EM.
 
         <br />
 
-        Ces modèles, généralement fiables et créés par des experts des molécules considérées, peuvent être convertis manuellement
-        en modèles gros grain par ces mêmes experts. 
-        Une molécule gros grain est une manière de “simplifier” des ensembles d'atomes en une seule particule afin d'accélérer les simulations.
+        Généralement fiables et créés par des experts des molécules considérées, ces modèles peuvent être convertis manuellement
+        en “modèles gros grain” par ces mêmes experts. 
+        La technique gros grain est une manière de “simplifier” un ensemble d'atomes en une seule particule afin d'accélérer les simulations.
 
         <br /><br />
 
         Afin de partager les connaissances expérimentales apportées dans la création de ces modèles, il était nécessaire d'offrir aux chercheurs 
-        un ensemble d'outils pour construire des simulations rapidement :
+        un ensemble d'outils pour construire plus rapidement des simulations :
 
         <ul>
           <li>

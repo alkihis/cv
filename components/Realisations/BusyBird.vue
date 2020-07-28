@@ -19,20 +19,22 @@
 
       <span>
         Une équipe du laboratoire LBBE (Lyon) étudie les populations de Cincle Plongeur au sein du Parc Naturel de la Chartreuse (nord de Grenoble).
-        Cela consiste à relever sur des fiches papier des informations anatomiques et physiologiques à propos d'oiseaux "pucés" à l'aide d'anneaux placés sur leurs pattes.
+        Cela consiste à relever sur des fiches papier des informations anatomiques et physiologiques d'oiseaux "pucés" à l'aide d'anneaux placés sur leurs pattes.
+
+        Cette prise de données régulière permet de suivre dans le temps la santé et l'évolution numérique de la population.
 
         <br />
-
-        Cette prise de données régulière permet de suivre dans le temps l'évolution de la population au sein de plusieurs nichoirs, lieu de vie des oiseaux.
-
+        Néanmoins, la prise d'information papier est parfois compliquée. L'animal peut être manipulé durant la prise, qui nécessite également un appareil pour enregistrer
+        des sons et vidéos de l'oiseau.
+        
         <br />
-        Néanmoins, la prise d'information papier est parfois compliquée (manipulation de l'animal en simulatané), nécessite tout de même un appareil pour enregistrer
-        des sons et vidéos de l'animal, et devra être retranscrite sur ordinateur plus tard (via Excel) pour centraliser les données.
+        Une fois l'étude sur le terrain terminée, elle devra être retranscrite sur ordinateur plus tard (via Excel) pour centraliser les données.
         
         <br /><br />
-        L'objectif de l'application est donc de proposer une manière de saisir, directement en numérique, les informations liées aux oiseaux. 
-        En outre, il est possible d'enregistrer les sons et vidéos directement depuis un formulaire sur le téléphone, évitant le recours à d'autres appareils. 
-        L'application peut ensuite se synchroniser avec un serveur distant dès qu'une connexion Internet est disponible, sans attendre le retour des biologistes de terrain.
+        L'objectif de l'application est donc de proposer une manière de saisir, directement au format numérique, les informations liées aux oiseaux. 
+        Il est possible d'enregistrer les sons et vidéos directement depuis le téléphone, évitant le recours à des appareils externes. 
+        L'application peut ensuite se synchroniser avec un serveur distant dès qu'une connexion Internet est disponible, 
+        sans attendre le retour des biologistes de terrain au laboratoire.
 
         <br />
         Enfin, l'application propose une reconnaissance vocale pour chacun des champs afin de faciliter la saisie lorsque l'examinateur tient l'oiseau.

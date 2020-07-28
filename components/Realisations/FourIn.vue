@@ -12,7 +12,7 @@
       <span>
         <strong>4IN</strong> (Innate Immunity genes In INsects) est un projet visant la création d'une base de données de gènes sur l'immunité innée des insectes.
         <br />
-        Cette base permet de rechercher des gènes de l'immunité innée par voie métabolique, espèce, famille ou identifiant. Une fois les gènes trouvées,
+        Cette base permet de rechercher des gènes de l'immunité innée par voie métabolique, espèce, famille ou identifiant. Une fois les gènes trouvés,
         on peut avoir accès à sa séquence génomique et protéique, ainsi qu'à ses homologues chez différentes espèces.
       </span>
 

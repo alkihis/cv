@@ -19,17 +19,17 @@
       </h5>
 
       <span>
-        À la suite de leur réussite au diplôme du Master Bio-informatique, il est intéressant pour l'équipe pédagogique de suivre les anciens étudiants. 
-
+        Suivre les anciens étudiants après leur parcours en master présente plusieurs intérêts.
+        
         <br />
-        Le premier but est statistique, le ministère de l'Ensignement Supérieur et de la Recherche demandant régulièrement des informations sur l'avenir
+        Le premier but est statistique, le ministère de l'Enseignement Supérieur et de la Recherche demandant régulièrement des informations sur l'avenir
         des étudiants afin de juger l'efficacité de la formation.
         <br />
         Le second objectif est de constituer un "carnet d'adresses" aux étudiants actuellement en formation qui pourront contacter non seulement les précédents étudiants
         mais également leurs employeurs, si ils sont renseignés.
 
         <br /><br />
-        Initialement, un site web très simple permettait de récupérer ces informations, et il a été décidé d'étendre les possibilités de cet outil avec ce projet.
+        Un site web très simple existait déjà dans ce but, mais il a été décidé d'étendre les possibilités de cet outil avec ce projet.
         La réalisation de cette base de données prend part au sein du <strong>projet professionnalisant du troisième semestre</strong> du master.
       </span>
 
@@ -38,8 +38,8 @@
       </h5>
       <span>
         <strong>promos@bioinfo</strong> est développé avec <strong>React</strong> en <strong>TypeScript</strong> côté front-end, 
-        afin de garantir le dynamisme et l'ergonomie de l'interface qui doit se
-        vouloir au plus simple possible, pour ne pas décourager les anciens étudiants de saisir leurs informations.
+        afin de garantir le dynamisme et l'ergonomie de l'interface qui doit être le plus simple possible, 
+        pour ne pas décourager les anciens étudiants de saisir leurs informations.
 
         <br />
         La partie serveur est construite à l'aide de <strong>Python</strong> avec le framework <strong>Flask</strong>, associée à une base <strong>SQLite</strong>

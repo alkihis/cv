@@ -16,7 +16,8 @@
     <template v-slot:details>
       <span>
         L'explorateur d'interactome de Streptococcus Pneumoniae, appelé OmegaTopology, a été construit lors de mon stage de master 1.
-        Il permet d'observer les interactions entre groupes de protéines obtenues par homologie et de récupérer des informations sur les protéines concernées via 
+        Il permet d'observer les interactions entre groupes de protéines obtenues par homologie, 
+        et de récupérer des informations sur les protéines concernées via 
         une interface se présentant comme un graphe en trois dimensions. 
       </span>
 
@@ -29,12 +30,12 @@
         Ces interactions permettent de comprendre ou déduire des mécanismes biologiques s'effectuant au niveau de l'emplacement des protéines impliquées.
 
         <br />
-        Cependant, observer l'interaction entre plusieurs protéines expérimentalement est encore relativement difficile et les données
-        en notre possession ne permettent pas de couvrir la majorité des espèces.
+        Cependant, observer l'interaction entre plusieurs protéines expérimentalement est encore difficile. Les données
+        en notre possession ne permettent donc pas de couvrir la majorité des espèces.
 
         <br />
-        Il peut donc être intéressant de partir d'un organisme dont on ne dispose pas d'informations d'interaction et d'utiliser l'homologie entre 
-        protéines (au niveau de la séquence, par exemple) afin de trouver si des protéines <strong>homologues</strong> interagissent dans d'autres espèces proches.
+        Pour pallier à ce manque d'informations, il peut être intéressant de partir d'un organisme partiellement connu et d'utiliser l'homologie entre 
+        protéines (au niveau de la séquence, par exemple) afin de trouver si des <strong>homologues</strong> interagissent dans d'autres espèces proches.
 
         <br /><br />
         Ce cas a donc été appliqué à S. Pneumoniae. Une interface graphique web a été conçue pour explorer les données obtenues.
