@@ -229,9 +229,9 @@ export default class extends Vue {
     }
 
     this.saved_window_size = window_size;
-    this.last_saved = threshold + (1000 * 5);
+    this.last_saved = threshold + (1000);
 
-    return this.saved_el_pos = this.elements.map(e => e.getBoundingClientRect().y + window.scrollY);
+    return this.saved_el_pos = this.elements.map(e => e.getBoundingClientRect().y + window.scrollY - 2);
   }
 
   mounted() {
