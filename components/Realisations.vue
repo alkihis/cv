@@ -186,6 +186,10 @@
     @media screen and (max-width: 1200px) {
       display: block;
     }
+
+    @media screen and (min-width: 2100px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   .box {

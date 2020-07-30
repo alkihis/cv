@@ -30,8 +30,8 @@
         Ces interactions permettent de comprendre ou déduire des mécanismes biologiques s'effectuant au niveau de l'emplacement des protéines impliquées.
 
         <br />
-        Cependant, observer l'interaction entre plusieurs protéines expérimentalement est encore difficile. Les données
-        en notre possession ne permettent donc pas de couvrir la majorité des espèces.
+        Cependant, observer l'interaction entre plusieurs protéines expérimentalement reste encore difficile. Les données
+        en notre possession ne permettent pas de couvrir la majorité des espèces.
 
         <br />
         Pour pallier à ce manque d'informations, il peut être intéressant de partir d'un organisme partiellement connu et d'utiliser l'homologie entre 
@@ -39,9 +39,9 @@
 
         <br /><br />
         Ce cas a donc été appliqué à S. Pneumoniae. Une interface graphique web a été conçue pour explorer les données obtenues.
-        Celle-ci représente les interactions sous la forme d'un graphe, où un noeud est une protéine (identifiée par son ID 
+        Celle-ci représente les interactions sous la forme d'un graphe, où un noeud représente une protéine (identifiée par son ID 
         <a href="https://www.uniprot.org/UniProt" target="_blank" rel="noopener noreferrer">UniProt</a>) et une arête une ou plusieurs interactions
-        montrées de façon expérimentale.
+        qui sont montrées de façon expérimentale.
       </span>
 
       <h5 class="modal-header">
@@ -49,11 +49,11 @@
       </h5>
       <span>
         <strong>OmegaTopology</strong> est développé avec le pseudo-framework <strong>Stencil</strong> et <strong>Bootstrap</strong>,
-        le graphe étant dessiné à l'aide de <strong>d3</strong>.
+        le graphe est dessiné à l'aide de <strong>d3</strong>.
 
         <br />
         L'obtention des nombreuses données nécessaires pour construire et filtrer le graphe (interactions, protéines, espèces, fonctions protéiques) 
-        est déléguée à de multiples micro-services conçus lors du stage, chacun assurant sa tâche associée.
+        a été déléguée plusieurs micro-services conçus lors du stage où chacun assure sa tâche associée.
         <br />
         Les données sont stockées dans une base <strong>CouchDB</strong> hébergée à l'IBCP.
       </span>

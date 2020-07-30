@@ -49,6 +49,10 @@
 </template>
 
 <style lang="scss" scoped>
+  aside {
+    text-align: justify;
+  }
+  
   .title {
     font-weight: bold;
     font-size: 1.4rem;

@@ -36,18 +36,18 @@
 
         <br /><br />
 
-        Afin de partager les connaissances expérimentales apportées dans la création de ces modèles, il était nécessaire d'offrir aux chercheurs 
+        Afin de partager les connaissances expérimentales apportées dans la création de ces modèles, il a été nécessaire d'offrir aux chercheurs 
         un ensemble d'outils pour construire plus rapidement des simulations :
 
         <ul>
           <li>
-            Un système centralisé pour déposer leurs créations et obtenir celles produites par d'autres équipes
+            Un système centralisé permettant de déposer leurs créations et obtenir celles produites par d'autres équipes
           </li>
           <li>
             Une interface graphique simple pour convertir un modèle tout atome en modèle gros grain
           </li>
           <li>
-            Un outil graphique pour construire des systèmes couramment étudiés : des membranes lipidiques
+            Un outil graphique pour construire des systèmes régulièrement étudiés : des membranes lipidiques
           </li>
         </ul>
 
@@ -66,8 +66,8 @@
         Les données sont stockées dans une base <strong>CouchDB</strong> hébergée à l'IBCP.
 
         <br />
-        Le service demandant plusieurs outils (<strong>GROMACS, Martinize et INSANE</strong>) pour notamment convertir les molécules, il a été mis dans un conteneur <strong>Docker</strong>
-        déployable sur n'importe quel machine.
+        Le service demande plusieurs outils (<strong>GROMACS, Martinize et INSANE</strong>) pour notamment convertir les molécules, 
+        il a donc été mis dans un conteneur <strong>Docker</strong> déployable sur n'importe quel machine.
       </span>
     </template>
   </realisation-modal>
