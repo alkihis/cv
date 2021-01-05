@@ -36,6 +36,7 @@
     <div class="social-links">
       <about-tag link="https://www.linkedin.com/in/louis-b%C3%A9ranger-52815a178/" img="linkedin.png" text="LinkedIn" />
       <about-tag link="https://github.com/alkihis" img="github.svg" text="GitHub" />
+      <about-tag link="/cv.pdf" img="cv.png" text="CV PDF" />
     </div>
   </main>
 </template>
