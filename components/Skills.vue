@@ -11,12 +11,12 @@
     <div class="image-container">
       <skill-icon url="javascript.png" text="JavaScript" />
       <skill-icon url="typescript.svg" text="TypeScript" />
-      <skill-icon url="php.png" text="PHP" />
       <skill-icon url="python.png" text="Python" />
-      <skill-icon url="R.png" text="R" />
+      <skill-icon url="php.png" text="PHP" />
+      <!-- <skill-icon url="R.png" text="R" /> -->
       <skill-icon url="csharp.svg" text="C#" />
       <skill-icon url="cpp.svg" text="C++" />
-      <skill-icon url="java.png" text="Java" />
+      <!-- <skill-icon url="java.png" text="Java" /> -->
     </div>
 
     <h2 class="text heading">
@@ -26,12 +26,13 @@
     <div class="image-container">
       <skill-icon url="react.png" text="React" />
       <skill-icon url="vue.png" text="Vue.js" />
-      <skill-icon url="nest.png" text="Nest.js" />
       <skill-icon url="nuxt.png" text="Nuxt" />
+      <skill-icon url="nest.png" text="Nest.js" />
       <skill-icon url="express.png" text="Express" />
       <skill-icon url="node.png" text="Node.js" />
       <skill-icon url="deno.png" text="Deno" />
-      <skill-icon url="shiny.png" text="R Shiny" />
+      <skill-icon url="django.png" text="Django" />
+      <!-- <skill-icon url="shiny.png" text="R Shiny" /> -->
     </div>
 
     <h2 class="text heading">
@@ -57,6 +58,7 @@
       <skill-icon url="debian.png" text="Debian" />
       <skill-icon url="ubuntu.png" text="Ubuntu" />
       <skill-icon url="apache.png" text="Apache" />
+      <skill-icon url="gitlab.png" text="GitLab CI" />
     </div>
 
     <h2 class="text heading">

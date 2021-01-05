@@ -6,7 +6,7 @@
   >
     <template v-slot:details>
       <span>
-        Dans le cadre d'un <strong>stage de 25 heures</strong> en informatique à la fin de la licence, j'ai participé à la réécriture d'une 
+        Dans le cadre d'un <strong>stage de 25 heures</strong> en informatique à la fin de la licence, j'ai participé à la réécriture d'une
         fonction de “clôture d'hypergraphe” au sein d'une bibliothèque interne au LBBE/INRIA.
       </span>
 
@@ -16,7 +16,7 @@
 
       <span>
         Un hypergraphe est un graphe (constitué d'arêtes et de noeuds) orienté avec chaque noeud pouvant avoir des connexions vers d'autres noeuds ainsi que vers
-        lui-même, en appliquant des conditions sur chaque liaison. 
+        lui-même, en appliquant des conditions sur chaque liaison.
         Cette bibliothèque est conçue pour modéliser informatiquement des ensembles de réactions chimiques liées, comme on peut en voir en biologie notamment.
 
         <br />
@@ -35,6 +35,8 @@
         <br />
         Ce développement a été l'occasion de me familiariser avec les structures de données complexes de la librairie standard du language (map, deque, set et pair notamment).
       </span>
+
+      <realisation-skill-icons :icons="[['cpp.svg', 'C++']]" />
     </template>
   </realisation-modal>
 </template>
@@ -46,10 +48,12 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 import RealisationModal from '../RealisationModal.vue';
+import RealisationSkillIcons from '../RealisationSkillIcons.vue';
 
 @Component({
   components: {
-    RealisationModal
+    RealisationModal,
+    RealisationSkillIcons,
   }
 })
 export default class extends Vue {}

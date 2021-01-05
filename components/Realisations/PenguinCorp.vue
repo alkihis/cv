@@ -4,8 +4,8 @@
     date="7 au 9 Février 2020"
     link="https://axsiow.itch.io/les-pingouins"
     :sources="[
-      { url: 'https://github.com/alkihis/GameJam', text: 'Jeu vidéo' }, 
-    ]" 
+      { url: 'https://github.com/alkihis/GameJam', text: 'Jeu vidéo' },
+    ]"
   >
     <template v-slot:details>
       <span>
@@ -35,6 +35,8 @@
         Il a consisté en ma première expérience avec ce langage fortement typé différent des langages du web.
         Durant la GameJam, j'ai occupé le poste de développeur, et ai participé à la mise en place du menu ainsi que du système de dialogue au sein du jeu.
       </span>
+
+      <realisation-skill-icons :icons="[['unity.png', 'Unity'], ['csharp.svg', 'C#']]" />
     </template>
   </realisation-modal>
 </template>
@@ -46,10 +48,12 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 import RealisationModal from '../RealisationModal.vue';
+import RealisationSkillIcons from '../RealisationSkillIcons.vue';
 
 @Component({
   components: {
-    RealisationModal
+    RealisationModal,
+    RealisationSkillIcons,
   }
 })
 export default class extends Vue {}

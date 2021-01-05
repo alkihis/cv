@@ -4,7 +4,7 @@
     date="Septembre à Décembre 2018"
     location="BF2I (UMR0203)"
     :sources="[
-      { url: 'https://github.com/alkihis/4in', text: 'Client et serveur' }, 
+      { url: 'https://github.com/alkihis/4in', text: 'Client et serveur' },
     ]"
     link="http://bf2i300.insa-lyon.fr:443/"
   >
@@ -23,7 +23,7 @@
       <span>
         Le laboratoire BF2I a récolté au cours des années 2017 et 2018 des données génomiques issues du séquençage de plusieurs espèces, dont une en particulier
         : le charançon du riz. Des analyses ont été réalisées afin de notamment extraire les données d'homologie entre les gènes d'autres insectes et ceux du
-        charançon. 
+        charançon.
 
         <br /><br />
 
@@ -45,6 +45,8 @@
         Il a ensuite été choisi d'utiliser <strong>PHP</strong> pour concevoir le site web autour de la base de données.
         L'interface est modélisée avec le framework <strong>Materialize</strong> et rendue dynamique avec l'inclusion de scripts <strong>JavaScript</strong>.
       </span>
+
+      <realisation-skill-icons :icons="[['php.png', 'PHP'], ['mysql.png', 'MySQL'], ['materialize.png', 'Materialize']]" />
     </template>
   </realisation-modal>
 </template>
@@ -56,10 +58,12 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 import RealisationModal from '../RealisationModal.vue';
+import RealisationSkillIcons from '../RealisationSkillIcons.vue';
 
 @Component({
   components: {
-    RealisationModal
+    RealisationModal,
+    RealisationSkillIcons,
   }
 })
 export default class extends Vue {}

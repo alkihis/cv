@@ -4,7 +4,7 @@
     date="Septembre à Décembre 2019"
     location="LBBE (UMR5558)"
     :sources="[
-      { url: 'https://github.com/alkihis/promo-app-client', text: 'Client' }, 
+      { url: 'https://github.com/alkihis/promo-app-client', text: 'Client' },
       { url: 'https://github.com/alkihis/promo-app-server', text: 'Serveur' },
     ]"
   >
@@ -20,7 +20,7 @@
 
       <span>
         Suivre les anciens étudiants après leur parcours en master présente plusieurs intérêts.
-        
+
         <br />
         Le premier but est d'ordre statistique, le ministère de l'Enseignement Supérieur et de la Recherche demande régulièrement des informations sur le devenir
         des étudiants pour évaluer l'efficacité de la formation.
@@ -37,14 +37,19 @@
         Technologies employées
       </h5>
       <span>
-        <strong>promos@bioinfo</strong> est développé avec <strong>React</strong> en <strong>TypeScript</strong> côté front-end, 
-        pour garantir le dynamisme et l'ergonomie de l'interface qui doit être le plus simple possible, 
+        <strong>promos@bioinfo</strong> est développé avec <strong>React</strong> en <strong>TypeScript</strong> côté front-end,
+        pour garantir le dynamisme et l'ergonomie de l'interface qui doit être le plus simple possible,
         afin de ne pas décourager les anciens étudiants de saisir leurs informations.
+      </span>
 
-        <br />
+      <realisation-skill-icons :icons="[['react.png', 'React'], ['typescript.svg', 'TypeScript']]" />
+
+      <span>
         La partie serveur est construite à l'aide de <strong>Python</strong> avec le framework <strong>Flask</strong>, associée à une base <strong>SQLite</strong>
         dont la communication se fait au travers de l'ORM <strong>SQLAlchemy</strong>.
       </span>
+
+      <realisation-skill-icons :icons="[['python.png', 'Python'], ['flask.png', 'Flask'], ['sqlite.png', 'SQLite']]" />
     </template>
   </realisation-modal>
 </template>
@@ -56,10 +61,12 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 import RealisationModal from '../RealisationModal.vue';
+import RealisationSkillIcons from '../RealisationSkillIcons.vue';
 
 @Component({
   components: {
-    RealisationModal
+    RealisationModal,
+    RealisationSkillIcons,
   }
 })
 export default class extends Vue {}

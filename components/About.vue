@@ -3,11 +3,11 @@
     <div class="names text">
       <p>
         <span class="iam">Je suis</span>
-        <strong class="firstn">Louis</strong> 
+        <strong class="firstn">Louis</strong>
         <strong class="lastn">Béranger</strong>
       </p>
       <p>
-        Développeur bio-informaticien
+        Développeur web
       </p>
     </div>
 
@@ -23,17 +23,19 @@
     <p class="description text">
       Intéressé par l'étude et la compréhension des phénomènes biologiques, mon parcours universitaire a débuté avec une formation en biologie
       à l'Université de Lyon. Au cours de mes études, je me suis passionné pour la programmation et continué ma voie au sein du parcours
-      bio-informatique en licence, puis en master. 
+      bio-informatique en licence, puis en master.
 
       <br /><br />
-      Si la formation était majoritairement axée sur l'analyse de données génomiques, transcriptomiques et protéomiques, 
-      en parallèle je me suis formé aux technologies du web en autodidacte par de multiples projets personnels, 
-      ainsi j'ai enrichi cette expérience durant les différents stages et projets dans le cadre de ma formation.
+      Je me suis formé en parallèle de mes études aux technologies du web, en autodidacte par de multiples projets personnels
+      et par la suite via des enseignements propres à mon parcours.
+      J'ai ensuite enrichi et consolidé cette expérience durant les différents stages et projets dans le cadre de ma formation,
+      puis à <a href="https://www.bioaster.org/fr/" target="_blank" rel="noopener noreferrer">BIOASTER</a> (Lyon)
+      où j'ai participé au développement d'un service web.
     </p>
 
     <div class="social-links">
-      <about-tag link="https://www.linkedin.com/in/louis-b%C3%A9ranger-52815a178/" img="linkedin.png" text="LinkedIn" /> 
-      <about-tag link="https://github.com/alkihis" img="github.svg" text="GitHub" /> 
+      <about-tag link="https://www.linkedin.com/in/louis-b%C3%A9ranger-52815a178/" img="linkedin.png" text="LinkedIn" />
+      <about-tag link="https://github.com/alkihis" img="github.svg" text="GitHub" />
     </div>
   </main>
 </template>
@@ -72,7 +74,7 @@
     margin-top: .5rem;
     font-size: 1.2rem;
     font-weight: 700;
-    
+
     .tel, .email {
       color: rgb(87, 87, 255);
       text-decoration: none;

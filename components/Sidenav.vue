@@ -23,10 +23,10 @@
 
     <!-- Liens -->
     <div :class="{ 'links': true, 'open': open }">
-      <sidenav-link 
-        v-for="element in el_iterator" 
-        :key="element" 
-        :to="element" 
+      <sidenav-link
+        v-for="element in el_iterator"
+        :key="element"
+        :to="element"
         :highlighted="selected_element === element"
       >
         {{ available[element] }}
@@ -72,7 +72,7 @@
 
     .open-button {
       display: inline-flex;
-      
+
       img {
         height: 32px;
         width: 32px;
@@ -122,7 +122,7 @@
     .links {
       &:not(.open) {
         display: none;
-      } 
+      }
       margin-top: 0;
     }
   }
@@ -144,7 +144,7 @@ export default class extends Vue {
   available = {
     'about': 'À propos',
     'school': 'Parcours',
-    'realisations': 'Réalisations',
+    'realisations': 'Expériences',
     'skills': 'Compétences',
     'center-of-interests': 'Centres d\'intérêt',
   };
@@ -222,7 +222,7 @@ export default class extends Vue {
 
     const window_size: [number, number] = [window.innerWidth, window.innerHeight];
     const threshold = Date.now();
-    
+
     if (window_size[0] === this.saved_window_size[0] && window_size[1] === this.saved_window_size[1]) {
       if (this.last_saved > threshold)
         return this.saved_el_pos;
@@ -238,7 +238,7 @@ export default class extends Vue {
     this.elements = this.el_iterator.map(e => document.getElementById(e)!);
     this.handleDocumentClick = this.handleDocumentClick.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
-    
+
     window.addEventListener('click', this.handleDocumentClick);
     window.addEventListener('scroll', this.handleScroll);
 

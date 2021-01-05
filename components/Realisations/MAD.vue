@@ -4,13 +4,13 @@
     date="Janvier à Juin 2020"
     location="MMSB (UMR5086)"
     :sources="[
-      { url: 'https://github.com/MMSB-MOBI/martinize-db-client', text: 'Client' }, 
+      { url: 'https://github.com/MMSB-MOBI/martinize-db-client', text: 'Client' },
       { url: 'https://github.com/MMSB-MOBI/martinize-db', text: 'Serveur' }
     ]"
   >
     <template v-slot:details>
       <span>
-        MArtini Database est une base de données plurifonctionnelle permettant 
+        MArtini Database est une base de données plurifonctionnelle permettant
         <strong>d'archiver, versionner, créer et utiliser des molécules gros grain</strong>.
       </span>
 
@@ -22,7 +22,7 @@
         En dynamique moléculaire, on cherche à prévoir ou expliquer des comportements observés expérimentalement
         au niveau moléculaire, comme une association protéine-ligand ou le déplacement de protéine au sein d'une membrane biologique.
         <br />
-        Pour cela, on peut utiliser une technique développée au cours du siècle dernier : la simulation. 
+        Pour cela, on peut utiliser une technique développée au cours du siècle dernier : la simulation.
         Celle-ci se base sur des modèles de molécules réalistes, représentant chaque atome et chaque liaison entre eux, appelés tout atome.
         Ces modèles sont tirés de fichiers
         <a href="https://www.rcsb.org/" rel="noopener noreferrer" target="_blank">PDB</a>
@@ -31,12 +31,12 @@
         <br />
 
         Généralement fiables et créés par des experts des molécules considérées, ces modèles peuvent être convertis manuellement
-        en “modèles gros grain” par ces mêmes experts. 
+        en “modèles gros grain” par ces mêmes experts.
         La technique gros grain est une manière de “simplifier” un ensemble d'atomes en une seule particule afin d'accélérer les simulations.
 
         <br /><br />
 
-        Afin de partager les connaissances expérimentales apportées dans la création de ces modèles, il a été nécessaire d'offrir aux chercheurs 
+        Afin de partager les connaissances expérimentales apportées dans la création de ces modèles, il a été nécessaire d'offrir aux chercheurs
         un ensemble d'outils pour construire plus rapidement des simulations :
 
         <ul>
@@ -59,16 +59,20 @@
       <span>
         <strong>MArtini Database</strong> apporte une réponse à ces trois problèmes au travers d'un site web interactif,
         écrit en <strong>React</strong> et <strong>MaterialUI</strong> pour sa partie client, et <strong>Node.js</strong>
-        associé à <strong>Express</strong> pour sa partie serveur. 
+        associé à <strong>Express</strong> pour sa partie serveur.
+      </span>
 
-        <br />
-        
+      <realisation-skill-icons :icons="[['react.png', 'React'], ['materialui.png', 'Material UI'], ['node.png', 'Node.js'], ['express.png', 'Express']]" />
+
+      <span>
         Les données sont stockées dans une base <strong>CouchDB</strong> hébergée à l'IBCP.
 
         <br />
-        Le service demande plusieurs outils (<strong>GROMACS, Martinize et INSANE</strong>) pour notamment convertir les molécules, 
+        Le service demande plusieurs outils (<strong>GROMACS, Martinize et INSANE</strong>) pour notamment convertir les molécules,
         il a donc été mis dans un conteneur <strong>Docker</strong> déployable sur n'importe quel machine.
       </span>
+
+      <realisation-skill-icons :icons="[['couchdb.svg', 'CouchDB'], ['docker.png', 'Docker'], ['gromacs.png', 'GROMACS']]" />
     </template>
   </realisation-modal>
 </template>
@@ -80,10 +84,12 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 import RealisationModal from '../RealisationModal.vue';
+import RealisationSkillIcons from '../RealisationSkillIcons.vue';
 
 @Component({
   components: {
-    RealisationModal
+    RealisationModal,
+    RealisationSkillIcons,
   }
 })
 export default class extends Vue {}

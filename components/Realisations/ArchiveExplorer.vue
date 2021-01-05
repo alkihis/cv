@@ -4,14 +4,14 @@
     date="Août 2019 à Janvier 2020"
     link="https://archive-explorer.com"
     :sources="[
-      { url: 'https://github.com/alkihis/archive-explorer-web', text: 'Client' }, 
-      { url: 'https://github.com/alkihis/archive-explorer-node', text: 'Serveur' }, 
-      { url: 'https://github.com/alkihis/twitter-archive-reader', text: 'Lecteur d\'archive' }, 
-    ]" 
+      { url: 'https://github.com/alkihis/archive-explorer-web', text: 'Client' },
+      { url: 'https://github.com/alkihis/archive-explorer-node', text: 'Serveur' },
+      { url: 'https://github.com/alkihis/twitter-archive-reader', text: 'Lecteur d\'archive' },
+    ]"
   >
     <template v-slot:details>
       <span>
-        <strong>Archive Explorer</strong> est un service gratuit développé pour explorer simplement une archive Twitter, 
+        <strong>Archive Explorer</strong> est un service gratuit développé pour explorer simplement une archive Twitter,
         peu importe son type, et supprimer rapidement des vieux tweets.
       </span>
 
@@ -25,16 +25,16 @@
 
         <br /><br />
         Dans un premier temps, l'outil permet de consulter les données utilisateur contenues dans l'archive, et d'accéder à ses tweets.
-        Les tweets sont organisés par année puis mois, autorisant le client à remonter rapidement dans le temps. 
+        Les tweets sont organisés par année puis mois, autorisant le client à remonter rapidement dans le temps.
 
         <br />
-        Cette disposition est complétée par une recherche au sein de l'archive par expressions régulières et insensibilité à la casse, 
+        Cette disposition est complétée par une recherche au sein de l'archive par expressions régulières et insensibilité à la casse,
         à laquelle s'ajoute des opérateurs de recherche (temporels ou numériques, comme le nombre de favoris).
 
         <br />
         Depuis l'explorateur de tweets, l'usager peut supprimer des dizaines, centaines voir milliers de tweets dans un temps très court,
         grâce à une interface simple et multi-tâche.
-        
+
         <br /><br />
         Progressivement, l'outil s'est enrichi :
 
@@ -65,8 +65,11 @@
       </h5>
       <span>
         <strong>Archive Explorer</strong> est conçu côté client avec <strong>React</strong> et le framework <strong>MaterialUI</strong>.
+      </span>
 
-        <br />
+      <realisation-skill-icons :icons="[['react.png', 'React'], ['materialui.png', 'Material UI']]" />
+
+      <span>
         Le serveur est codé avec <strong>Node.js</strong> et <strong>Express</strong>. Les utilisateurs et le cache de tweets sont stockés
         dans une base de données NoSQL <strong>MongoDB</strong> (via l'ORM <strong>Mongoose</strong>).
 
@@ -75,6 +78,8 @@
         <br />
         <strong>Socket.io</strong> est également utilisé pour suivre des tâches de suppression en temps réel.
       </span>
+
+      <realisation-skill-icons :icons="[['node.png', 'Node.js'], ['express.png', 'Express'], ['mongo.png', 'MongoDB'], ['socketio.png', 'Socket.io']]" />
     </template>
   </realisation-modal>
 </template>
@@ -86,10 +91,12 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 import RealisationModal from '../RealisationModal.vue';
+import RealisationSkillIcons from '../RealisationSkillIcons.vue';
 
 @Component({
   components: {
-    RealisationModal
+    RealisationModal,
+    RealisationSkillIcons,
   }
 })
 export default class extends Vue {}

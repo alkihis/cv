@@ -1,7 +1,7 @@
 <template>
   <main class="pad-main">
     <h1 class="text heading">
-      Réalisations
+      Expériences
     </h1>
     <div class="text subheading">
       Professionnelles et personnelles
@@ -12,57 +12,66 @@
     </h2>
 
     <div class="card-holder">
-      <realisation-card 
-        @click.native="onCardClick('mad')" 
-        image="/img/mad.png" 
+      <realisation-card
+        @click.native="onCardClick('lims')"
+        image="/img/bioaster.jpg"
+        title="Contribution au développement d'un LIMS"
+        details="Mise en place d'un système d'audit d'actions utilisateurs, maintenance et développement de fonctionnalités en fonction des retours utilisateur"
+        location="BIOASTER (Lyon)"
+        techs="Django, Python, jQuery, GitLab CI"
+      />
+
+      <realisation-card
+        @click.native="onCardClick('mad')"
+        image="/img/mad.png"
         title="MAD — MArtini Database"
         details="Conception d'une base de données de molécules gros grain et d'un outil de conversion de modèles tout atome en gros grain"
-        location="CNRS-MMSB (UMR5086)"
+        location="CNRS-MMSB (Lyon)"
         techs="Node.js, GROMACS, Martini, Docker"
       />
 
-      <realisation-card 
-        @click.native="onCardClick('omegatopology')" 
-        image="/img/omega-topology.png" 
+      <realisation-card
+        @click.native="onCardClick('omegatopology')"
+        image="/img/omega-topology.png"
         title="Interactome de S. Pneumoniae"
         details="Construction du réseau d'interactions protéine-protéine de Streptococcus Pneumoniae par homologie et mise en place d'un visualiseur interactif"
-        location="CNRS-MMSB (UMR5086)"
+        location="CNRS-MMSB (Lyon)"
         techs="TypeScript, Stencil, D3, CouchDB"
       />
 
-      <realisation-card 
-        @click.native="onCardClick('promoapp')" 
-        image="/img/promoapp.png" 
+      <realisation-card
+        @click.native="onCardClick('promoapp')"
+        image="/img/promoapp.png"
         title="Suivi des promotions bioinfo@lyon"
         details="Interface web pour récolter des informations sur les anciens étudiants du master bio-informatique de l'Université Claude Bernard Lyon 1"
-        location="CNRS-LBBE (UMR5558)"
+        location="CNRS-LBBE (Lyon)"
         techs="React, Python, Flask, SQLAlchemy"
       />
 
-      <realisation-card 
-        @click.native="onCardClick('busybird')" 
-        image="/img/busybird.png" 
+      <realisation-card
+        @click.native="onCardClick('busybird')"
+        image="/img/busybird.png"
         title="Busy Bird"
         details="Développement d'une application mobile Android afin d'assister l'étude de populations d'oiseaux sur le terrain"
-        location="CNRS-LBBE (UMR5558)"
+        location="CNRS-LBBE (Lyon)"
         techs="Cordova, JavaScript"
       />
 
-      <realisation-card 
-        @click.native="onCardClick('4in')" 
-        image="/img/4in.png" 
+      <realisation-card
+        @click.native="onCardClick('4in')"
+        image="/img/4in.png"
         title="4IN — Innate Immunity genes In INsects"
         details="Base de données rassemblant des informations génomiques et protéiques de différentes espèces, recherche avec BLAST+"
-        location="INSA-BF2I (UMR0203)"
+        location="INSA-BF2I (Lyon)"
         techs="PHP, MySQL, BLAST, jQuery"
       />
 
-      <realisation-card 
-        @click.native="onCardClick('hypergraph')" 
-        image="/img/hypergraph.png" 
+      <realisation-card
+        @click.native="onCardClick('hypergraph')"
+        image="/img/hypergraph.png"
         title="Clôture d'hypergraphe"
         details="Optimisation d'une fonction réalisant la clôture d'un graphe représentant des réactions chimiques"
-        location="INRIA-LBBE"
+        location="INRIA-LBBE (Lyon)"
         techs="C++"
       />
     </div>
@@ -72,33 +81,33 @@
     </h2>
 
     <div class="card-holder">
-      <realisation-card 
-        @click.native="onCardClick('questionit')" 
-        image="/img/questionit.png" 
+      <realisation-card
+        @click.native="onCardClick('questionit')"
+        image="/img/questionit.png"
         title="QuestionIt.space"
         details="Site web de question-réponse destiné aux utilisateurs de Twitter"
         techs="Vue.js, Nuxt, Nest.js, TypeORM"
       />
 
-      <realisation-card 
-        @click.native="onCardClick('archiveexplorer')" 
-        image="/img/archive.png" 
+      <realisation-card
+        @click.native="onCardClick('archiveexplorer')"
+        image="/img/archive.png"
         title="Archive Explorer"
         details="Exploration d’archives Twitter : navigation dans les tweets, messages privés par mois, année et jour ; suppression de masse d’anciens tweets"
         techs="React, MaterialUI, MongoDB, API Twitter"
       />
 
-      <realisation-card 
-        @click.native="onCardClick('gamejam')" 
-        image="/img/pingouin.png" 
+      <realisation-card
+        @click.native="onCardClick('gamejam')"
+        image="/img/pingouin.png"
         title="Penguin Corp."
         details="Conception en équipe d'un jeu vidéo de vulgarisation scientifique lors de la Scientific Game Jam 2020 de Grenoble"
         techs="Unity, C#"
       />
 
-      <realisation-card 
-        @click.native="onCardClick('github')" 
-        image="/img/github.png" 
+      <realisation-card
+        @click.native="onCardClick('github')"
+        image="/img/github.png"
         title="Et d'autres"
         details="Découvrez mes autres petits projets (bibliothèques, outils CLI, ...) sur mon GitHub !"
         techs="Bash, Python, TypeScript, PHP..."
@@ -117,7 +126,10 @@
 
     <Modal v-if="modal" :open="true" @close="onModalClose">
       <div class="box">
-        <div v-if="type === 'mad'">
+        <div v-if="type === 'lims'">
+          <noe-lims />
+        </div>
+        <div v-else-if="type === 'mad'">
           <MAD />
         </div>
         <div v-else-if="type === 'omegatopology'">
@@ -224,6 +236,7 @@ import QuestionIt from './Realisations/QuestionIt.vue';
 import ArchiveExplorer from './Realisations/ArchiveExplorer.vue';
 import PenguinCorp from './Realisations/PenguinCorp.vue';
 import GitHub from './Realisations/GitHub.vue';
+import NoeLims from './Realisations/NoeLims.vue';
 import Modal from './Modal.vue';
 
 @Component({
@@ -240,6 +253,7 @@ import Modal from './Modal.vue';
     ArchiveExplorer,
     PenguinCorp,
     GitHub,
+    NoeLims,
   }
 })
 export default class extends Vue {
