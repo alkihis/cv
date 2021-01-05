@@ -11,14 +11,14 @@ export default {
     htmlAttrs: {
       lang: 'fr',
     },
-    title: 'Louis Béranger - Développeur bio-informaticien',
+    title: 'Louis Béranger - Développeur web',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Développeur bio-informatique spécialisé dans la conception de bases de données et outils web, utilisant des solutions modernes tel que React ou Vue.js.'
+        content: 'Développeur web, utilisant des solutions modernes tel que React ou Vue.js.'
       },
       {
         hid: 'og:type',
@@ -38,7 +38,7 @@ export default {
       {
         hid: 'og:title',
         property: 'og:tile',
-        content: 'Louis Béranger - Développeur bio-informaticien'
+        content: 'Louis Béranger - Développeur web'
       },
       {
         hid: 'og:site_name',
@@ -48,7 +48,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Développeur bio-informatique spécialisé dans la conception de bases de données et outils web, utilisant des solutions modernes tel que React ou Vue.js.'
+        content: 'Développeur web, utilisant des solutions modernes tel que React ou Vue.js.'
       },
       {
         hid: 'twitter:card',
@@ -63,12 +63,12 @@ export default {
       {
         hid: 'twitter:title',
         property: 'twitter:title',
-        content: 'Louis Béranger - Développeur bio-informaticien'
+        content: 'Louis Béranger - Développeur web'
       },
       {
         hid: 'twitter:description',
         property: 'twitter:description',
-        content: 'Développeur bio-informatique spécialisé dans la conception de bases de données et outils web, utilisant des solutions modernes tel que React ou Vue.js.'
+        content: 'Développeur web, utilisant des solutions modernes tel que React ou Vue.js.'
       },
       {
         hid: 'og:image',
