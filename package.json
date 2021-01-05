@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy-server": "npm run generate && rm -rf /var/www/cv/* && cp dist/* /var/www/cv"
+    "deploy-server": "npm run generate && rm -rf /var/www/cv/* && cp -R dist/* /var/www/cv"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
