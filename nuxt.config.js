@@ -1,6 +1,5 @@
 
 export default {
-  mode: 'universal',
   server: {
     port: 2500
   },
@@ -15,10 +14,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { 
-        hid: 'description', 
-        name: 'description', 
-        content: 'Développeur bio-informatique spécialisé dans la conception de bases de données et outils web, utilisant des solutions modernes tel que React ou Vue.js.' 
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Développeur bio-informatique spécialisé dans la conception de bases de données et outils web, utilisant des solutions modernes tel que React ou Vue.js.'
       },
       {
         hid: 'og:type',
